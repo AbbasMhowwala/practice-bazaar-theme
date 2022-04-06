@@ -1,0 +1,168 @@
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+ol,
+ul li {
+    list-style-type: none;
+}
+
+.bz-sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 80%;
+    padding: 92px 35px 10px;
+    background-color: transparent;
+    outline: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .bz-main-menu, .bz-main-footer
+{
+    display: none;
+} */
+.bz-side-menu-wrapper button,
+.bz-side-menu-wrapper a.bz-side-navlink {
+    border: none !important;
+    padding: 8px 0 3px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bz-side-menu-wrapper .accordion-item {
+    border: none;
+}
+
+.bz-side-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+.bz-side-menu-wrapper .accordion-button:not(.collapsed),
+.accordion-button:focus {
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.accordion-body ul.bz-sidenav-ul li a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 5px 0 0;
+    color: #949494;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.bz-side-menu-wrapper .accordion-body {
+    padding: 0;
+}
+
+.no-link-accordion.accordion-item button:after {
+    display: none;
+    content: none !important;
+}
+
+.bz-side-menu-wrapper .accordion-item .accordion-header button:after {
+    width: 10px;
+    height: 10px;
+    background-size: 100%;
+}
+
+.social-media svg path {
+    fill: #fff;
+}
+
+.bz-main-footer.bg-black {
+    padding: 120px 55px 95px;
+}
+
+h3.footer-title {
+    color: #fff;
+    margin-bottom: 3px;
+    text-transform: lowercase;
+    font-size: 23px;
+}
+
+li.foot-link {
+    color: #949494;
+    line-height: 40px;
+}
+
+input#formBasicEmail {
+    background: transparent;
+    height: 55px;
+    color: #949494;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 11px;
+    padding-right: 10px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+}
+
+.submit-btn-foot {
+    height: 52px;
+    background-color: #000 !important;
+}
+
+nav.primary-nav {
+    background: #fff;
+    padding: 20px 55px;
+}
+li.logo-menu {
+    margin-right: auto !important;
+}
+li.menu.links-menu {
+    vertical-align: middle;
+    padding: 0 19px;
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+}
+li.menu.links-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 200px;
+}
+.submenu {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 20px;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+    transition: top .15s ease-out;
+}
+li.menu.links-menu:hover> .submenu
+{
+    visibility: visible;
+    opacity: 1;
+}
+.submenu ul li {
+    padding: 10px 60px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
