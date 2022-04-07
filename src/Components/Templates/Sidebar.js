@@ -46,7 +46,7 @@ export const Sidebar = () => {
                         <Accordion.Header>Shop</Accordion.Header>
                         <Accordion.Body>
                             <ul className='bz-sidenav-ul'>
-                                <li><Link to="/" className='bz-side-navlink'>Shop</Link></li>
+                                <li><Link to="/shop" className='bz-side-navlink'>Shop</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Boxed Masonary</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Shop Carousel</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Single Category</Link></li>
