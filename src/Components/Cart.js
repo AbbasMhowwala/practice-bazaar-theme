@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';
 import product from './Assets/Images/p1.jpg'
-import { TextField } from '@mui/material';
+import { TextField, Typography } from '@mui/material';
 
 const Cart = () => {
     function increment(c) {
@@ -44,44 +44,94 @@ const Cart = () => {
                         <div className='cart-content mb-3'>
                             <h1 className='text-muted'>Shopping Cart</h1>
                         </div>
-                        <Row>
-                            <Col lg={6}>
-                                <div className='m-3'>
-                                    <Card>
-                                        <CloseIcon className='close' />
-                                        <Card.Img variant="top" src={product} className="p-image" />
-                                        <Card.Body>
-                                            <Card.Title className='d-inline-block'>3-drawer chest</Card.Title>
-                                            <small className='product-price'>$169</small>
-                                        </Card.Body>
-                                        <div className='field'>
-                                            <Button variant='contained' className='qty-btn minus' onClick={() => setCount(decrement)}>-</Button>
-                                            <TextField id="outlined-basic" variant="standard" value={count} />
-                                            <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
-                                        </div>
-                                    </Card>
+                        <Row className='mt-5'>
+                            <Col md={12}>
+                                <div className='product-cart mb-3'>
+                                    <CloseIcon className='mx-3' />
+                                    <Image src={product} className="p-image" width={100} />
+                                    <Typography
+                                        gutterBottom
+                                        variant="h5"
+                                        component="p"
+                                        className="product-title d-inline-block mx-3"
+                                    >
+                                        3-drawer chest
+                                    </Typography>
+                                    <span className='qty mx-3'>
+                                    <Button variant='contained' className='qty-btn minus' onClick={() => setCount(decrement)}>-</Button>
+                                    <TextField id="outlined-basic" variant="standard" value={count} style={{ verticalAlign: "middle" }} />
+                                    <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
+                                    </span>
+                                    <Typography
+                                        variant="body2"
+                                        component="small"
+                                        className="product-price"
+                                        color="text.black"
+                                        style={{ float: "unset" }}
+                                    >
+                                        $ 493
+                                    </Typography>
                                 </div>
                             </Col>
-                            <Col lg={6}>
-                                <div className='m-3'>
-                                    <Card>
-                                        <CloseIcon className='close' />
-                                        <Card.Img variant="top" src={product} className="p-image" />
-                                        <Card.Body>
-                                            <Card.Title className='d-inline-block'>3-drawer chest</Card.Title>
-                                            <small className='product-price'>$169</small>
-                                        </Card.Body>
-                                        <div className='field'>
-                                            <Button variant='contained' className='qty-btn minus' onClick={() => setCount(decrement)}>-</Button>
-                                            <TextField id="outlined-basic" variant="standard" value={count} />
-                                            <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
-                                        </div>
-                                    </Card>
+                            <Col md={12}>
+                                <div className='product-cart mb-3'>
+                                    <CloseIcon className='mx-3' />
+                                    <Image src={product} className="p-image" width={100} />
+                                    <Typography
+                                        gutterBottom
+                                        variant="h5"
+                                        component="p"
+                                        className="product-title d-inline-block mx-3"
+                                    >
+                                        3-drawer chest
+                                    </Typography>
+                                    <span className='qty mx-3'>
+                                    <Button variant='contained' className='qty-btn minus' onClick={() => setCount(decrement)}>-</Button>
+                                    <TextField id="outlined-basic" variant="standard" value={count} style={{ verticalAlign: "middle" }} />
+                                    <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
+                                    </span>
+                                    <Typography
+                                        variant="body2"
+                                        component="small"
+                                        className="product-price"
+                                        color="text.black"
+                                        style={{ float: "unset" }}
+                                    >
+                                        $ 493
+                                    </Typography>
+                                </div>
+                            </Col>
+                            <Col md={12}>
+                                <div className='product-cart mb-3'>
+                                    <CloseIcon className='mx-3' />
+                                    <Image src={product} className="p-image" width={100} />
+                                    <Typography
+                                        gutterBottom
+                                        variant="h5"
+                                        component="p"
+                                        className="product-title d-inline-block mx-3"
+                                    >
+                                        3-drawer chest
+                                    </Typography>
+                                    <span className='qty mx-3'>
+                                    <Button variant='contained' className='qty-btn minus' onClick={() => setCount(decrement)}>-</Button>
+                                    <TextField id="outlined-basic" variant="standard" value={count} style={{ verticalAlign: "middle" }} />
+                                    <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
+                                    </span>
+                                    <Typography
+                                        variant="body2"
+                                        component="small"
+                                        className="product-price"
+                                        color="text.black"
+                                        style={{ float: "unset" }}
+                                    >
+                                        $ 493
+                                    </Typography>
                                 </div>
                             </Col>
                         </Row>
                     </Col>
-                    <Col lg={4} className="mt-5">
+                    <Col lg={4} className='mt-5'>
                         <div className="cart_order_sum">
                             <div className="opt-box">
                                 <div className='cart-content mb-3'>

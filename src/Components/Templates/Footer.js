@@ -18,9 +18,9 @@ const Footer = () => {
               <Link to="/" className='m-3 d-block text-decoration-none text-white'>Belgium WebNet</Link>
               <Image src={payment} className="img-fuid m-3" />
               <ul className='m-3 social-media'>
-                <li className='d-inline-block me-3'><FacebookOutlinedIcon /></li>
-                <li className='d-inline-block me-3'><InstagramIcon /></li>
-                <li className='d-inline-block me-1'><TwitterIcon /></li>
+                <li className='d-inline-block me-3'><Link to="/"><FacebookOutlinedIcon /></Link></li>
+                <li className='d-inline-block me-3'><Link to="/"><InstagramIcon /></Link></li>
+                <li className='d-inline-block me-1'><Link to="/"><TwitterIcon /></Link></li>
               </ul>
             </div>
           </Col>

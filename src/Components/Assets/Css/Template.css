@@ -141,7 +141,7 @@ li.menu.links-menu a {
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
 }
 .submenu {
     position: absolute;
@@ -165,4 +165,11 @@ li.menu.links-menu:hover> .submenu
     padding: 10px 60px;
     border-bottom: 1px solid #ccc;
     width: 100%;
+}
+.icon-menu {
+    padding: 0px 6px !important;
+}
+.icon-menu svg {
+    width: 20px;
+    height: 22px;
 }

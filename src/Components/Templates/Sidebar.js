@@ -11,12 +11,12 @@ export const Sidebar = () => {
         <div className='bz-sidebar-wrapper'>
             <div className='bz-side-logo-wrapper my-3'>
                 <div className='logo'>
-                    <Image src={logo} className="img-fluid w-100" />
+                    <Image src={logo} className="img-fluid" />
                 </div>
             </div>
             <div className='bz-side-menu-wrapper my-3'>
                 <Accordion defaultActiveKey="0">
-                    <Accordion.Item eventKey="0">
+                    <Accordion.Item>
                         <Accordion.Header>Home</Accordion.Header>
                         <Accordion.Body>
                             <ul className='bz-sidenav-ul'>

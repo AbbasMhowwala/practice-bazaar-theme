@@ -1,11 +1,22 @@
-import React from 'react'
-import { Image, Navbar } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, Image, Navbar, Offcanvas } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import SearchIcon from '@mui/icons-material/Search';
 import GridOnIcon from '@mui/icons-material/GridOn';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 const Menu = () => {
+  const [placement, setPlacement] = useState("end");
+  const [splacement, setSPlacement] = useState("top");
+  const [show, setShow] = useState(false);
+  const [showsearch, setShowSearch] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleCloseSearch = () => setShowSearch(false);
+  const handleShow = () => setShow(true);
+  const handleShowSearch = () => setShowSearch(true);
   return (
     <div className='bz-main-menu'>
       <Navbar className="primary-nav align-items-center d-block">
@@ -21,14 +32,14 @@ const Menu = () => {
             <Link to="/">Home</Link>
             <div className='submenu'>
               <ul>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
-                 <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
+                <li className="submenu-links"><Link to="/">Home</Link></li>
               </ul>
             </div>
           </li>
@@ -44,17 +55,44 @@ const Menu = () => {
           <li className="menu links-menu">
             <Link to="/contact">Contact us</Link>
           </li>
-          <li className="menu links-menu">
+          <li className="menu links-menu icon-menu">
             <Link to="/shop"><ShoppingBagIcon /></Link>
           </li>
-          <li className="menu links-menu">
-            <Link to="/shop"><SearchIcon /></Link>
+          <li className="menu links-menu icon-menu">
+          <Button className='bg-white text-black border-0 p-0' onClick={handleShowSearch}><SearchIcon /></Button>
           </li>
-          <li className="menu links-menu">
-            <Link to="/shop"><GridOnIcon /></Link>
+          <li className="menu links-menu icon-menu">
+            <Button className='bg-white text-black border-0 p-0' onClick={handleShow}><GridOnIcon /></Button>
           </li>
         </ul>
       </Navbar>
+      <Offcanvas show={showsearch} onHide={handleCloseSearch} placement={splacement} className="searchbar">
+        <Offcanvas.Header closeButton>
+        <Offcanvas.Title style={{ visibility: "hidden" }}>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        </Offcanvas.Body>
+      </Offcanvas>
+
+      <Offcanvas show={show} onHide={handleClose} placement={placement}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title style={{ visibility: "hidden" }}>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className='mt-5 text-center text-muted'>
+          <h2>welcome</h2>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo
+          <div className='position-absolute m-auto w-100' style={{ bottom: "15px" }}>
+            <h4 className='mt-5'>follow our awesomeness</h4>
+            <div className='social'>
+              <ul>
+                <li className='d-inline-block me-3'><Link className='text-muted' to="/"><TwitterIcon /></Link></li>
+                <li className='d-inline-block me-3'><Link className='text-muted' to="/"><InstagramIcon /></Link></li>
+                <li className='d-inline-block me-3'><Link className='text-muted' to="/"><FacebookOutlinedIcon /></Link></li>
+              </ul>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
     </div>
   )
 }

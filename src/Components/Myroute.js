@@ -7,6 +7,7 @@ import Footer from './Templates/Footer';
 import ProductDetail from './ProductDetail';
 import Cart from './Cart';
 import Checkout from './Checkout';
+import Contact from './Contact';
 function Myroute() {
     return (
         <>
@@ -17,6 +18,7 @@ function Myroute() {
                 <Route exact path="/product-detail" element={<ProductDetail />} />
                 <Route exact path="/cart" element={<Cart />} />
                 <Route exact path="/checkout" element={<Checkout />} />
+                <Route exact path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </>

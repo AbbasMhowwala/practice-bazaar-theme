@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 section.breadcrumb-main {
     background: #f8f8f8;
     padding: 40px 0;
@@ -400,4 +401,75 @@ p.any_txt span {
 .checkout__btns:hover,
 .checkout__btns:focus {
     color: #fff;
+}
+.product-cart {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #ccc;
+}
+.bz-checkout .accordion-first .accordion-button::after {
+    background-image: none;
+    content: "click here to login";
+    width: auto;
+}
+.bz-checkout .accordion-second .accordion-button::after {
+    background-image: none;
+    content: "click here to enter your code";
+    width: auto;
+}
+.bz-checkout .accordion-button:not(.collapsed)::after {
+    transform: none !important;
+}
+.bz-checkout .accordion-header {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 15px 0px;
+}
+.bz-checkout .accordion-item:not(:first-of-type) {
+    border-top: solid;
+    border-width: 1px;
+    border-color: #ebebeb;
+}
+.bz-checkout .accordion-button:not(.collapsed) {
+    color: grey;
+    background-color: transparent;
+    box-shadow: none;
+}
+.bz-checkout .accordion-item {
+    background-color: #fff;
+    border: transparent;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root
+{
+    padding: 4px !important;
+}
+.bz-checkout .accordion-body {
+    padding: 1rem 0 !important;
+}
+
+.contact-content span {
+    font-size: 30px;
+    font-family: 'Beau Rivage', cursive;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+h2.contact-head {
+    position: relative;
+}
+
+h2.contact-head:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #000;
+    top: 55px;
+}
+.searchbar {
+    height: 100%;
+    border: none;
+    background: rgb(255 255 255 / 47%);
 }

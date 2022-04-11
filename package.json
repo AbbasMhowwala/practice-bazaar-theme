@@ -17,6 +17,7 @@
     "react-bootstrap": "^2.2.2",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
+    "react-iframe": "^1.8.0",
     "react-photo-gallery": "^8.0.0",
     "react-photo-masonry": "^8.0.0",
     "react-router-dom": "^6.3.0",

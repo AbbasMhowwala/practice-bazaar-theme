@@ -15,10 +15,12 @@ import Slider from "react-slick";
 
 const ProductDetail = () => {
     function increment(c) {
+        // setCount(c => c + 1);
         return c + 1;
     }
     const [count, setCount] = useState(0);
     function decrement(c) {
+        // setCount(c => Math.max(c - 1, 0));
         return c - 1;
     }
     const settings = {
@@ -96,7 +98,7 @@ const ProductDetail = () => {
                                     <TextField id="outlined-basic" variant="standard" value={count} />
                                     <Button variant='contained' className='qty-btn plus' onClick={() => setCount(increment)}>+</Button>
                                 </div>
-                                <Button variant='contained' className='qty-btn add-to-cart'><Link className='text-white text-decoration-none' to="/cart">Add to cart</Link></Button>
+                                <Link className='text-white text-decoration-none' to="/cart"><Button variant='contained' className='qty-btn add-to-cart'>Add to cart</Button></Link>
                             </div>
                             <p className='sku text-muted'>Sku: 66565</p>
                             <p className='sku text-muted'>Category: Mens Fashion</p>
@@ -117,29 +119,29 @@ const ProductDetail = () => {
                             <Tab eventKey="home" title="description">
                                 <p className='text-muted description-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus.</p>
                             </Tab>
-                            <Tab eventKey="profile" title="additional information">
-                                <table className="shop_attributes text-muted table-bordered">
+                            <Tab eventKey="info" title="additional information">
+                                <table className="text-muted">
                                     <tbody><tr>
                                         <th>Weight</th>
-                                        <td className="product_weight">1.2 kg</td>
+                                        <td className="product_weight p-3">1.2 kg</td>
                                     </tr>
                                         <tr>
                                             <th>Dimensions</th>
-                                            <td className="product_dimensions">2- x 15 x 7 cm</td>
+                                            <td className="product_dimensions p-3">2- x 15 x 7 cm</td>
                                         </tr>
                                         <tr>
                                             <th>Colors</th>
-                                            <td><p className='m-0'>Grey</p>
+                                            <td className='p-3'><p className='m-0'>Grey</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>Sizes</th>
-                                            <td><p className='m-0'>One Size</p>
+                                            <td className='p-3'><p className='m-0'>One Size</p>
                                             </td>
                                         </tr>
                                     </tbody></table>
                             </Tab>
-                            <Tab eventKey="contact" title="reviews (0)">
+                            <Tab eventKey="review" title="reviews (0)">
                                 <Row>
                                     <Col lg={6}>
                                         <div className='reviews'>
