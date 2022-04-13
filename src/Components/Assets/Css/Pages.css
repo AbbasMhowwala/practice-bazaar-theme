@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
 section.breadcrumb-main {
     background: #f8f8f8;
     padding: 40px 0;
@@ -316,6 +317,7 @@ p.r-options.opt2 span {
     text-align: right;
     clear: both;
 }
+
 p.r-options.opt3 span {
     font-size: 18px;
 }
@@ -387,6 +389,7 @@ p.any_txt span {
     width: 50px;
     margin-right: 5px;
 }
+
 @media (max-width: 767px) {
     .cart_order_sum {
         padding: 25px 20px 20px;
@@ -402,6 +405,7 @@ p.any_txt span {
 .checkout__btns:focus {
     color: #fff;
 }
+
 .product-cart {
     width: 100%;
     background: #ffffff;
@@ -410,42 +414,50 @@ p.any_txt span {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border: 1px solid #ccc;
 }
+
 .bz-checkout .accordion-first .accordion-button::after {
     background-image: none;
     content: "click here to login";
     width: auto;
 }
+
 .bz-checkout .accordion-second .accordion-button::after {
     background-image: none;
     content: "click here to enter your code";
     width: auto;
 }
+
 .bz-checkout .accordion-button:not(.collapsed)::after {
     transform: none !important;
 }
+
 .bz-checkout .accordion-header {
     background-color: #fff;
     border: 1px solid #e1e1e1;
     padding: 15px 0px;
 }
+
 .bz-checkout .accordion-item:not(:first-of-type) {
     border-top: solid;
     border-width: 1px;
     border-color: #ebebeb;
 }
+
 .bz-checkout .accordion-button:not(.collapsed) {
     color: grey;
     background-color: transparent;
     box-shadow: none;
 }
+
 .bz-checkout .accordion-item {
     background-color: #fff;
     border: transparent;
 }
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root
-{
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
     padding: 4px !important;
 }
+
 .bz-checkout .accordion-body {
     padding: 1rem 0 !important;
 }
@@ -456,6 +468,7 @@ p.any_txt span {
     letter-spacing: 4px;
     font-weight: 500;
 }
+
 h2.contact-head {
     position: relative;
 }
@@ -468,8 +481,76 @@ h2.contact-head:before {
     background: #000;
     top: 55px;
 }
+
 .searchbar {
     height: 100%;
     border: none;
     background: rgb(255 255 255 / 47%);
+}
+
+.off-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.progress-section {
+    padding: 0 50px;
+}
+
+.bz-about-main .progress {
+    height: 5px;
+    border-radius: 50px;
+}
+
+.bz-progress.w-100 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+h4.progress-text {
+    font-size: 15px;
+}
+
+.testi-item {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.testi-item p {
+    margin: 27px 0 0;
+    color: #fff;
+    font-size: 17px;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+
+.testi-item h3.author {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.testi-item h6.author-designation {
+    font-size: 14px;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .bz-about-main section.bg-light.p-5 {
+        padding: 0 !important;
+    }
+    .progress-section {
+        padding: 20px 0px;
+    }
+    .bz-about-main section.bg-light .p-5 {
+        padding: 4rem 0!important;
+    }
+    .testi-item {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
 }

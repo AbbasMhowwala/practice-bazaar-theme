@@ -35,7 +35,7 @@ const Footer = () => {
           </Col>
           <Col lg={3}>
             <h3 className='footer-title text-white mb-3'>Profile</h3>
-            <ul>
+            <ul>  
               <li className='foot-link'>28 Bartholomeo street, NY, NY</li>
               <li className='foot-link'>phone: <Link className='text-decoration-none text-muted' to="tel: 0035 265 244 58">0035 265 244 58</Link></li>
               <li className='foot-link'>phone: <Link className='text-decoration-none text-muted' to="tel: 0035 244 58 265">0035 244 58 265</Link></li>

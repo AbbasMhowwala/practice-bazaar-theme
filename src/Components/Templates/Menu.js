@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Image, Navbar, Offcanvas } from 'react-bootstrap'
+import { Button, Form, Image, Navbar, Offcanvas } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
@@ -59,7 +59,7 @@ const Menu = () => {
             <Link to="/shop"><ShoppingBagIcon /></Link>
           </li>
           <li className="menu links-menu icon-menu">
-          <Button className='bg-white text-black border-0 p-0' onClick={handleShowSearch}><SearchIcon /></Button>
+            <Button className='bg-white text-black border-0 p-0' onClick={handleShowSearch}><SearchIcon /></Button>
           </li>
           <li className="menu links-menu icon-menu">
             <Button className='bg-white text-black border-0 p-0' onClick={handleShow}><GridOnIcon /></Button>
@@ -68,12 +68,21 @@ const Menu = () => {
       </Navbar>
       <Offcanvas show={showsearch} onHide={handleCloseSearch} placement={splacement} className="searchbar">
         <Offcanvas.Header closeButton>
-        <Offcanvas.Title style={{ visibility: "hidden" }}>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title style={{ visibility: "hidden" }}>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className='d-flex alitn-items-center'>
+          <div className='off-form'>
+            <Form className='position-relative'>
+              <Form.Group className="mb-3 " controlId="formBasicEmail">
+                <Form.Control type="email" placeholder="e-mail" />
+              </Form.Group>
+              <Button variant="contained" type="submit" className='position-absolute text-white submit-btn-foot' style={{ right: "1px", top: "1px" }}>
+                Submit
+              </Button>
+            </Form>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
-
       <Offcanvas show={show} onHide={handleClose} placement={placement}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title style={{ visibility: "hidden" }}>Offcanvas</Offcanvas.Title>

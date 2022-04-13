@@ -22,13 +22,8 @@ ul li {
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* .bz-main-menu, .bz-main-footer
-{
-    display: none;
-} */
-.bz-side-menu-wrapper button,
-.bz-side-menu-wrapper a.bz-side-navlink {
+.bz-side-menu-wrapper button
+ {
     border: none !important;
     padding: 8px 0 3px;
     font-size: 15px;
@@ -37,7 +32,13 @@ ul li {
     font-weight: 600;
     text-decoration: none;
 }
-
+.bz-side-menu-wrapper a.bz-side-navlink{
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
 .bz-side-menu-wrapper .accordion-item {
     border: none;
 }

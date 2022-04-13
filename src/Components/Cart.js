@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Col, Container, Row, Image, Button, Card } from 'react-bootstrap'
+import { Col, Container, Row, Image, Button } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';

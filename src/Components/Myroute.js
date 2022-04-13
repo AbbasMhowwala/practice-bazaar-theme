@@ -8,10 +8,14 @@ import ProductDetail from './ProductDetail';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import Contact from './Contact';
+import { isBrowser } from 'react-device-detect';
+import Mobilemenu from './Mobilemenu';
+
 function Myroute() {
     return (
         <>
-            <Menu />
+        {isBrowser? (<Menu />): (<Mobilemenu />)}
+            {/* <Menu /> */}
             <Routes>
                 <Route exact path="/about" element={<About />} />
                 <Route exact path="/shop" element={<Shop />} />

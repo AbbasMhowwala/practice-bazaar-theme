@@ -3,6 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Helmet from 'react-helmet'
 import Gallery from 'react-photo-gallery'
 import { Sidebar } from './Templates/Sidebar'
+import { isBrowser } from 'react-device-detect';
+import Mobilemenu from './Mobilemenu'
+
 const Home = () => {
   const photos = [
     {
@@ -107,7 +110,7 @@ const Home = () => {
       height: 3
     }
   ];
-  
+
   return (
     <div className='bz-home-wrapper'>
       <Helmet>
@@ -122,11 +125,11 @@ const Home = () => {
       <Container fluid>
         <Row>
           <Col md={2} lg={2} className="p-0">
-            <Sidebar />
+            {isBrowser ? (<Sidebar />) : (<Mobilemenu />)}
           </Col>
           <Col md={10} lg={10} className="p-0">
             <div className='masonary p-0'>
-                <Gallery photos={photos} />
+              <Gallery photos={photos} />
             </div>
           </Col>
         </Row>

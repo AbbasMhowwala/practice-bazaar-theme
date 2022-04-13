@@ -37,7 +37,7 @@ export const Sidebar = () => {
                                 <li><Link to="/" className='bz-side-navlink'>Meet the Team</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Payment Plans</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Our Gift Vouchers</Link></li>
-                                <li><Link to="/" className='bz-side-navlink'>Contact Us</Link></li>
+                                <li><Link to="/contact" className='bz-side-navlink'>Contact Us</Link></li>
                                 <li><Link to="/" className='bz-side-navlink'>Coming Soon Page</Link></li>
                             </ul>
                         </Accordion.Body>
