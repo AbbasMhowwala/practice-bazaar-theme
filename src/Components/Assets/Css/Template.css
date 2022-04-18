@@ -22,8 +22,8 @@ ul li {
     flex-direction: column;
     justify-content: space-between;
 }
-.bz-side-menu-wrapper button
- {
+
+.bz-side-menu-wrapper button {
     border: none !important;
     padding: 8px 0 3px;
     font-size: 15px;
@@ -32,13 +32,15 @@ ul li {
     font-weight: 600;
     text-decoration: none;
 }
-.bz-side-menu-wrapper a.bz-side-navlink{
+
+.bz-side-menu-wrapper a.bz-side-navlink {
     font-size: 15px;
     line-height: 30px;
     color: #000;
     font-weight: 600;
     text-decoration: none;
 }
+
 .bz-side-menu-wrapper .accordion-item {
     border: none;
 }
@@ -125,9 +127,11 @@ nav.primary-nav {
     background: #fff;
     padding: 20px 55px;
 }
+
 li.logo-menu {
     margin-right: auto !important;
 }
+
 li.menu.links-menu {
     vertical-align: middle;
     padding: 0 19px;
@@ -136,6 +140,7 @@ li.menu.links-menu {
     font-size: 16px;
     position: relative;
 }
+
 li.menu.links-menu a {
     color: #000;
     text-decoration: none;
@@ -144,6 +149,7 @@ li.menu.links-menu a {
 .logo img {
     width: 150px;
 }
+
 .submenu {
     position: absolute;
     display: block;
@@ -157,20 +163,39 @@ li.menu.links-menu a {
     box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
     transition: top .15s ease-out;
 }
-li.menu.links-menu:hover> .submenu
-{
+
+li.menu.links-menu:hover>.submenu {
     visibility: visible;
     opacity: 1;
 }
+
 .submenu ul li {
     padding: 10px 60px;
     border-bottom: 1px solid #ccc;
     width: 100%;
 }
+
 .icon-menu {
     padding: 0px 6px !important;
 }
+
 .icon-menu svg {
     width: 20px;
     height: 22px;
+}
+
+.offcanvas.offcanvas-start.show {
+    width: 290px;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+
+    .bz-main-footer.bg-black {
+        padding: 50px 0;
+    }
+    
+    nav.mobile-menu.w-100.justify-content-between.bg-white.navbar.navbar-expand.navbar-light.fixed-top {
+        width: 100% !important;
+    }
+
 }

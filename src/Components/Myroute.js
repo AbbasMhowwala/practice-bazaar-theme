@@ -9,7 +9,7 @@ import Cart from './Cart';
 import Checkout from './Checkout';
 import Contact from './Contact';
 import { isBrowser } from 'react-device-detect';
-import Mobilemenu from './Mobilemenu';
+import Mobilemenu from './Templates/Mobilemenu';
 
 function Myroute() {
     return (

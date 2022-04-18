@@ -4,8 +4,7 @@ import Helmet from 'react-helmet'
 import Gallery from 'react-photo-gallery'
 import { Sidebar } from './Templates/Sidebar'
 import { isBrowser } from 'react-device-detect';
-import Mobilemenu from './Mobilemenu'
-
+import Mobilemenu from './Templates/Mobilemenu'
 const Home = () => {
   const photos = [
     {
