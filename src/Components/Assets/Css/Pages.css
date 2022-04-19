@@ -568,7 +568,7 @@ h4.progress-text {
     .react-slider__imgZoom {
         display: none;
     }
-    .product-detai button.slick-arrow.slick-next, img.p-image, span.qty.mx-3 {
+    .bz-cart-main img.p-image, .product-detai button.slick-arrow.slick-next, span.qty.mx-3 {
         display: none !important;
     }
     .product-cart
