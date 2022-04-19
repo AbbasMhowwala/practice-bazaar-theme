@@ -565,4 +565,27 @@ h4.progress-text {
     .product-detail .d-flex {
         display: block !important;
     }
+    .react-slider__imgZoom {
+        display: none;
+    }
+    .product-detai button.slick-arrow.slick-next, img.p-image, span.qty.mx-3 {
+        display: none !important;
+    }
+    .product-cart
+    
+    {
+        padding: 20px;
+    }
+    .product-title {
+        font-size: 18px !important;
+        margin: 0 !important;
+    }
+    small.product-price {
+        float: right !important;
+        top: 10px;
+        position: relative;
+    }
+    .bz-checkout {
+        margin-top: 100px;
+    }
 }

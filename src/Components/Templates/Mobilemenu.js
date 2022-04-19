@@ -107,7 +107,7 @@ const Mobilemenu = () => {
                   </Nav.Link>
                 </div>
                 <div className="shop me-3">
-                  <Link className='text-black' to="/shop"><ShoppingBagIcon /></Link>
+                  <Link className='text-black' to="/cart"><ShoppingBagIcon /></Link>
                 </div>
               </Navbar>
             </div>
