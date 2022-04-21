@@ -541,50 +541,63 @@ h4.progress-text {
     .bz-about-main section.bg-light.p-5 {
         padding: 0 !important;
     }
+
     .progress-section {
         padding: 20px 0px;
     }
+
     .bz-about-main section.bg-light .p-5 {
-        padding: 4rem 0!important;
+        padding: 4rem 0 !important;
     }
+
     .testi-item {
         width: 100%;
         text-align: center;
         margin: 0 auto;
         padding: 20px 0;
     }
+
     section.breadcrumb-main {
         margin-top: 60px;
     }
+
     .MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
         width: 78%;
     }
+
     .field {
         margin-bottom: 20px;
     }
+
     .product-detail .d-flex {
         display: block !important;
     }
+
     .react-slider__imgZoom {
         display: none;
     }
-    .bz-cart-main img.p-image, .product-detai button.slick-arrow.slick-next, span.qty.mx-3 {
+
+    .bz-cart-main img.p-image,
+    .product-detai button.slick-arrow.slick-next,
+    span.qty.mx-3 {
         display: none !important;
     }
-    .product-cart
-    
-    {
+
+    .product-cart {
         padding: 20px;
     }
+
     .product-title {
         font-size: 18px !important;
         margin: 0 !important;
     }
+
     small.product-price {
         float: right !important;
         top: 10px;
         position: relative;
     }
+
     .bz-checkout {
         margin-top: 100px;
     }
