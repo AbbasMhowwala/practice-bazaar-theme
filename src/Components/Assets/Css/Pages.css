@@ -489,8 +489,33 @@ h2.contact-head:before {
 }
 
 .off-form {
+    margin: 0 auto;
+    padding: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.btn-close {
+    opacity: 1;
+    z-index: 9;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none !important;
+}
+.off-form form.position-relative {
     width: 500px;
     margin: 0 auto;
+    text-align: center;
+    top: 40%;
+    background: #fff;
 }
 
 .progress-section {
@@ -601,4 +626,16 @@ h4.progress-text {
     .bz-checkout {
         margin-top: 100px;
     }
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #000000 !important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused
+{
+    color: #000 !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline
+{
+    border-color: rgb(131, 131, 131) !important;
 }

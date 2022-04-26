@@ -38,7 +38,7 @@ function Checkout() {
                   <FloatingLabel controlId="floatingPassword" label="password *">
                     <Form.Control type="password" placeholder="Password" />
                   </FloatingLabel>
-                  <Button variant='contained' className='mt-3'>log in</Button>
+                  <Button variant='contained' className='mt-3  bg-black rounded-0'>log in</Button>
                   <p className='text-muted mt-3'>lost your password?</p>
                 </Accordion.Body>
               </Accordion.Item>
@@ -52,7 +52,7 @@ function Checkout() {
                   >
                     <Form.Control type="text" placeholder="coupon code" />
                   </FloatingLabel>
-                  <Button variant='contained' className='mt-3'>log in</Button>
+                  <Button variant='contained' className='mt-3 bg-black rounded-0'>log in</Button>
 
                 </Accordion.Body>
               </Accordion.Item>
@@ -90,7 +90,7 @@ function Checkout() {
                         width="20"
                         src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
                         srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
-                        alt=""
+                        alt="Flags"
                       />
                       {option.label} ({option.code}) +{option.phone}
                     </Box>
@@ -105,9 +105,10 @@ function Checkout() {
                       }}
                     />
                   )}
-                />              </Col>
+                />
+              </Col>
               <Col lg={12}>
-                <TextField id="suite" label="Apartment, suite, unit etc. (optional)" variant="outlined" className='w-100 mb-3 mt-1' />
+                <TextField id="suite" label="Apartment, suite, unit etc. (optional)" variant="outlined" className='w-100 mb-3 mt-1'  />
               </Col>
               <Col lg={12}>
                 <TextField id="town-name" label="town / city *" variant="outlined" className='w-100 mb-3 mt-1' />

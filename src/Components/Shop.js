@@ -1,5 +1,5 @@
-import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Col, Container, Image, Modal, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import product from './Assets/Images/p1.jpg'
 import './Assets/Css/Pages.css'
@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import Helmet from 'react-helmet'
 const Shop = () => {
+    const [lgShow, setLgShow] = useState(false);
     const minDistance = 0;
     function valuetext(value) {
         return `${value}°C`;
@@ -96,14 +97,50 @@ const Shop = () => {
                     </Col>
                     <Col lg={9}>
                         <Row>
+                        <Col lg={4}>
+                                {/* <Link to="/product-detail"> */}
+                                <div className='product-block'>
+                                    <div className='product-image'>
+                                        <Image src={product} className="p-image w-100" />
+                                        <div className='look-btn'>
+                                            <Button variant='contained' onClick={() => setLgShow(true)} className='quick-btn'>Quick Look</Button>
+                                        </div>
+                                    </div>
+                                    <div className='product-content'>
+                                        <h3 className='product-title'>3-drawer chest</h3>
+                                        <small className='product-price'>$169</small>
+                                        <p className='text-muted categories'>Home Decor</p>
+                                        <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
+                                    </div>
+                                </div>
+                                {/* </Link> */}
+                            </Col>
+                            <Col lg={4}>
+                                {/* <Link to="/product-detail"> */}
+                                <div className='product-block'>
+                                    <div className='product-image'>
+                                        <Image src={product} className="p-image w-100" />
+                                        <div className='look-btn'>
+                                            <Button variant='contained' onClick={() => setLgShow(true)} className='quick-btn'>Quick Look</Button>
+                                        </div>
+                                    </div>
+                                    <div className='product-content'>
+                                        <h3 className='product-title'>3-drawer chest</h3>
+                                        <small className='product-price'>$169</small>
+                                        <p className='text-muted categories'>Home Decor</p>
+                                        <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
+                                    </div>
+                                </div>
+                                {/* </Link> */}
+                            </Col>                            
                             <Col lg={4}>
                                 <Link to="/product-detail">
                                     <div className='product-block'>
                                         <div className='product-image'>
                                             <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
+                                            {/* <div className='look-btn'>
                                                 <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div className='product-content'>
                                             <h3 className='product-title'>3-drawer chest</h3>
@@ -119,9 +156,45 @@ const Shop = () => {
                                     <div className='product-block'>
                                         <div className='product-image'>
                                             <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
+                                            {/* <div className='look-btn'>
                                                 <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
+                                            </div> */}
+                                        </div>
+                                        <div className='product-content'>
+                                            <h3 className='product-title'>3-drawer chest</h3>
+                                            <small className='product-price'>$169</small>
+                                            <p className='text-muted categories'>Home Decor</p>
+                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </Col>
+                            <Col lg={4}>
+                                {/* <Link to="/product-detail"> */}
+                                <div className='product-block'>
+                                    <div className='product-image'>
+                                        <Image src={product} className="p-image w-100" />
+                                        <div className='look-btn'>
+                                            <Button variant='contained' onClick={() => setLgShow(true)} className='quick-btn'>Quick Look</Button>
+                                        </div>
+                                    </div>
+                                    <div className='product-content'>
+                                        <h3 className='product-title'>3-drawer chest</h3>
+                                        <small className='product-price'>$169</small>
+                                        <p className='text-muted categories'>Home Decor</p>
+                                        <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
+                                    </div>
+                                </div>
+                                {/* </Link> */}
+                            </Col>
+                            <Col lg={4}>
+                                <Link to="/product-detail">
+                                    <div className='product-block'>
+                                        <div className='product-image'>
+                                            <Image src={product} className="p-image w-100" />
+                                            {/* <div className='look-btn'>
+                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
+                                            </div> */}
                                         </div>
                                         <div className='product-content'>
                                             <h3 className='product-title'>3-drawer chest</h3>
@@ -137,29 +210,9 @@ const Shop = () => {
                                     <div className='product-block'>
                                         <div className='product-image'>
                                             <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
+                                            {/* <div className='look-btn'>
                                                 <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
-                                        </div>
-                                        <div className='product-content'>
-                                            <h3 className='product-title'>3-drawer chest</h3>
-                                            <small className='product-price'>$169</small>
-                                            <p className='text-muted categories'>Home Decor</p>
-                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={4}>
-                                <Link to="/product-detail">
-                                    <div className='product-block'>
-                                        <div className='product-image'>
-                                            <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
-                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div className='product-content'>
                                             <h3 className='product-title'>3-drawer chest</h3>
@@ -175,83 +228,9 @@ const Shop = () => {
                                     <div className='product-block'>
                                         <div className='product-image'>
                                             <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
+                                            {/* <div className='look-btn'>
                                                 <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
-                                        </div>
-                                        <div className='product-content'>
-                                            <h3 className='product-title'>3-drawer chest</h3>
-                                            <small className='product-price'>$169</small>
-                                            <p className='text-muted categories'>Home Decor</p>
-                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </Col>
-                            <Col lg={4}>
-                                <Link to="/product-detail">
-                                    <div className='product-block'>
-                                        <div className='product-image'>
-                                            <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
-                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
-                                        </div>
-                                        <div className='product-content'>
-                                            <h3 className='product-title'>3-drawer chest</h3>
-                                            <small className='product-price'>$169</small>
-                                            <p className='text-muted categories'>Home Decor</p>
-                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={4}>
-                                <Link to="/product-detail">
-                                    <div className='product-block'>
-                                        <div className='product-image'>
-                                            <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
-                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
-                                        </div>
-                                        <div className='product-content'>
-                                            <h3 className='product-title'>3-drawer chest</h3>
-                                            <small className='product-price'>$169</small>
-                                            <p className='text-muted categories'>Home Decor</p>
-                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </Col>
-                            <Col lg={4}>
-                                <Link to="/product-detail">
-                                    <div className='product-block'>
-                                        <div className='product-image'>
-                                            <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
-                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
-                                        </div>
-                                        <div className='product-content'>
-                                            <h3 className='product-title'>3-drawer chest</h3>
-                                            <small className='product-price'>$169</small>
-                                            <p className='text-muted categories'>Home Decor</p>
-                                            <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </Col>
-                            <Col lg={4}>
-                                <Link to="/product-detail">
-                                    <div className='product-block'>
-                                        <div className='product-image'>
-                                            <Image src={product} className="p-image w-100" />
-                                            <div className='look-btn'>
-                                                <Button variant='contained' className='quick-btn'>Quick Look</Button>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div className='product-content'>
                                             <h3 className='product-title'>3-drawer chest</h3>
@@ -266,6 +245,40 @@ const Shop = () => {
                     </Col>
                 </Row>
             </Container>
+            <Modal
+                size="lg"
+                show={lgShow}
+                onHide={() => setLgShow(false)}
+                aria-labelledby="example-modal-sizes-title-lg"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="example-modal-sizes-title-lg">
+                    3-drawer chest
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body className='p-0'>
+                    <Row className='align-items-center'>
+                        <Col lg={6}>
+                            <div className='imagedetail'>
+                                <Image src={product} className="p-image w-100" />
+
+                            </div>
+                        </Col>
+                        <Col lg={6}>
+                            <div className='content-detail p-3'>
+                                <div className='product-content'>
+                                    <h3 className='product-title'>3-drawer chest</h3><br />
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <small className='product-price'>$169</small>
+                                    <p className='text-muted categories'>Home Decor</p>
+                                    <div class="bz-add-to-cart"><Link to="/" class="add_to_cart_button">Add to cart</Link></div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Modal.Body>
+            </Modal>
         </div>
     )
 }
