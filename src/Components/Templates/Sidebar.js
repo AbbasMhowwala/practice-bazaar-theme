@@ -6,6 +6,8 @@ import logo from '../Assets/Images/logo.png'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { ExternalLink } from 'react-external-link';
+
 export const Sidebar = () => {
     return (
         <div className='bz-sidebar-wrapper'>
@@ -53,13 +55,13 @@ export const Sidebar = () => {
                             </ul>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="3" className='no-link-accordion'> 
+                    <Accordion.Item eventKey="3" className='no-link-accordion'>
                         <Accordion.Header><Link to="/" className='bz-side-navlink'>Order Tracking</Link></Accordion.Header>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="4" className='no-link-accordion'> 
+                    <Accordion.Item eventKey="4" className='no-link-accordion'>
                         <Accordion.Header><Link to="/" className='bz-side-navlink'>Blog</Link></Accordion.Header>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="5" className='no-link-accordion'> 
+                    <Accordion.Item eventKey="5" className='no-link-accordion'>
                         <Accordion.Header><Link to="/" className='bz-side-navlink'>Lookbook</Link></Accordion.Header>
                     </Accordion.Item>
                 </Accordion>
@@ -67,9 +69,9 @@ export const Sidebar = () => {
             <div className='bz-side-social-wrapper'>
                 <div className='social'>
                     <ul>
-                        <li className='d-inline-block me-3'><Link className='text-muted' to="/"><TwitterIcon /></Link></li>
-                        <li className='d-inline-block me-3'><Link className='text-muted' to="/"><InstagramIcon /></Link></li>
-                        <li className='d-inline-block me-3'><Link className='text-muted' to="/"><FacebookOutlinedIcon /></Link></li>                        
+                        <li className='d-inline-block me-3'><ExternalLink className='text-muted' href="https://example.com"><TwitterIcon /></ExternalLink></li>
+                        <li className='d-inline-block me-3'><Link className='text-muted' to="/" onClick={() => window.open("https://www.facebook.com/joe.namdar.5/", "_blank")}><InstagramIcon /></Link></li>
+                        <li className='d-inline-block me-3'><ExternalLink className='text-muted' href="https://example.com"><FacebookOutlinedIcon /></ExternalLink></li>
                     </ul>
                 </div>
             </div>
